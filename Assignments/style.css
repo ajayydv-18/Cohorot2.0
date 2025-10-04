@@ -1,0 +1,129 @@
+@font-face {
+    font-family:gilroy;
+    src: url(Gilroy-Medium.ttf);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+#nav
+{
+    background-color: rgba(19, 11, 27, 0.904);
+    height:200px;
+    color:white;
+    font-family: gilroy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+#about
+{
+    text-align: center;
+    background-color: aliceblue;
+    height:200px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:15px 90px;
+}
+#education
+{
+    text-align: center;
+    background-color: rgba(181, 210, 236, 0.432);
+    height: 250px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:15px 90px;   
+}
+.part1
+{
+    background-color: aliceblue;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+#skills
+{
+    text-align: center;
+    background-color:rgba(193, 240, 232, 0.514);
+    height:350px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:15px 90px;
+}
+.skill
+{
+    background-color: aliceblue;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+#projects
+{
+    text-align: center;
+    background-color:rgb(235, 217, 235);
+    height:350px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:15px 90px; 
+}
+.project
+{
+    background-color:aliceblue;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+#contact
+{
+    text-align: center;
+    background-color:rgb(194, 229, 222);
+    height: 300px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:15px 90px;
+}
+.contact
+{
+    background-color:aliceblue;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;  
+}
+#footer{
+    color:white;
+    background-color: rgba(19, 11, 27, 0.904);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+}
