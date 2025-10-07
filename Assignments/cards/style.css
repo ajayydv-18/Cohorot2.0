@@ -1,0 +1,83 @@
+@font-face {
+    font-family:gilroy;
+    src: url(../Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family:aj;
+    src: url(../sweater/adelia.otf);
+}
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main
+{
+    height:100%;
+    width:100%;
+    background-color:black;
+    padding:30px 40px;
+    display: flex;
+    gap:50px;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+}
+.cards
+{
+    height:400px;
+    width:300px;
+    background-color:rgb(46, 43, 43);
+    border-radius: 20px;
+    box-shadow:8px 6px 16px rgb(248, 61, 61);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.cards img
+{
+    height:200px;
+    width:200px;
+    object-fit:cover;
+    border-radius: 50%;
+
+}
+.cards h1{
+    font-size: 32px;
+    font-weight:500;
+    color:white;
+    text-align: center;
+}
+.cards p{
+    font-size:17px;
+    font-weight:500;
+    color: antiquewhite;
+    text-align: center;
+}
+.cards button{
+    padding:10px 30px;
+    font-size: 17px;
+    border-radius: 20px;
+    border:none;
+    cursor:pointer;
+}
+.cards button:hover{
+    background-color: rgb(243, 83, 83);
+}
+#text
+{
+    height:400px;
+    width:1000px;
+}
+#text h1{
+    color:rgb(150, 33, 33);
+    font-size:90px;
+    font-family: aj;
+}
