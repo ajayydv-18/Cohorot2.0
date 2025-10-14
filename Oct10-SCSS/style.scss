@@ -1,0 +1,54 @@
+@import "button";
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+//scss mein html ka hi patrn follow hot ahai ek tag ke andar doosra
+//isi process ko hum nesting kehte hai
+//ek hota hai mixin ye function jaise kaam krta hai jo piece of code baar repeat kar rahi hai usko isko andar daal do aur jha chahiye wha include kar lo 
+@mixin flexCenter()
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main
+{
+    height:100%;
+    width:100%;
+    background-color: black;
+    @include flexCenter();
+    
+
+    section
+    {
+        height:50%;
+        width:50%;
+        background-color: white;
+        @include flexCenter();
+
+    h1
+    {
+        color:red;
+    }
+    }
+
+    .red
+    {
+        @include buttonStyle(red,18px);
+    }
+
+    .blue
+    {
+        @include buttonStyle(blue,30px);
+    }
+}

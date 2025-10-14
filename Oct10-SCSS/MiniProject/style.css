@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-color: yellow;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.7s ease;
+}
+main section:nth-child(1) {
+  background-image: url(./ironman.jpeg);
+}
+main section:nth-child(2) {
+  background-image: url(./1f0d347f-07fc-4cb1-abd3-457891e278b2.jpeg);
+}
+main section:nth-child(3) {
+  background-image: url(./thor.jpeg);
+}
+main section:nth-child(4) {
+  background-image: url(./loki.jpeg);
+}
+main section:nth-child(5) {
+  background-image: url(./captain.jpeg);
+}
+main section:hover {
+  flex-grow: 2;
+}/*# sourceMappingURL=style.css.map */

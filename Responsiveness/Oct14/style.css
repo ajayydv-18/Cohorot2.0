@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "div1 div2 div2 div2" "div1 div3 div4 div5";
+  gap: 20px;
+  padding: 20px;
+}
+main .div1 {
+  background-color: darkslategrey;
+  grid-area: div1;
+  background-image: url(https://images.unsplash.com/photo-1612077441670-e423455339c2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+}
+main .div2 {
+  background-color: darksalmon;
+  grid-area: div2;
+  background-image: url(https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+}
+main .div3 {
+  background-color: darkblue;
+  grid-area: div3;
+  background-image: url(https://images.unsplash.com/photo-1509647648544-a3e09b751ad6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500);
+  background-size: cover;
+  background-position: top;
+  border: 1px solid white;
+}
+main .div4 {
+  background-color: darkcyan;
+  grid-area: div4;
+  background-image: url(https://images.unsplash.com/photo-1511553677255-ba939e5537e0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+}
+main .div5 {
+  background-color: beige;
+  grid-area: div5;
+  background-image: url(https://media.istockphoto.com/id/1182274681/photo/full-moon-rising-behind-a-hill-with-trees.webp?a=1&s=612x612&w=0&k=20&c=g8O4x9OCmwDO6mT2PCpZqh_WPqKlxrIkYhuzd5MIUVM=);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,314 @@
+@font-face {
+    font-family:gilroy ;
+    src: url(../Gilroy-Medium.ttf);
+}
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:gilroy ;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+main
+{
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 450px 150px 200px 600px 600px 200px 100px 300px 300px 300px 300px 300px 100px;
+    grid-template-areas: "header header header header"
+    "div2 div2 div2 div2"
+    "div3 div3 div3 div3"
+    "div4 div4 div5 div5"
+    "div6 div6 div6 div6"
+    "div7 div7 div7 div7"
+    "div8 div8 div8 div8"
+    "div9 div9 div9 div9"
+    "div10 div10 div10 div10"
+    "div11 div11 div12 div12"
+    "div13 div13 div14 div14"
+    "div15 div15 div16 div16"
+    "div17 div17 div18 div18"
+    "div19 div20 div21 div22"
+    "div23 div24 div25 div26";
+}
+header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+}
+#header-1
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+#header-2
+{
+    display:flex;
+    gap:30px;
+}
+#header-2 a{
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    font-weight:500;
+}
+#header-3 button{
+    padding:10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+#header-3 #button1
+{
+    border:2px solid #0162FF;
+    background-color: white;
+    color:#0162FF
+}
+#header-3 #button2
+{
+    background-color:#0162FF;
+    color:white
+}
+#div2
+{
+    background-color: #F6F7F9;
+    grid-area: div2;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 50px;
+    margin:10px;
+    border-radius:30px;
+}
+#div2-left
+{
+ padding-top:80px;   
+}
+#div2-left h1
+{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+}
+#div2-left p{
+    font-size: 16px;
+    padding:20px 0px;
+}
+#div2-left button
+{
+  padding:15px 25px;
+  border-radius: 30px;
+}
+#div2-left #div2button1
+{
+    background-color: #0162FF;
+    border: none;
+    color:white;
+}
+#div2-left #div2button2
+{
+    border:2px solid #0162FF;
+    color:#0162FF
+}
+#div2-right img{
+    border-radius:30px;
+    object-fit: cover;
+}
+#div3
+{
+    display: flex;
+    justify-content: space-around;
+    grid-area: div3;
+    text-align: center;
+    padding:20px;
+}
+#div3 h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+#div3 p{
+     text-align: center;
+}
+#div4
+{
+    background-color: #F6F7F9;
+    grid-area: div4;  
+    padding-left:70px;
+    padding-top: 30px;
+}
+#div4 h1{
+    line-height: 30px;
+    font-weight: 500;
+}
+#div4 button{
+    padding:10px 20px;
+    margin-bottom:10px;
+    border-radius: 30px;
+    border:2px solid black;
+}
+#div5
+{
+    background-color: #F6F7F9;
+    grid-area: div5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    color:#6F7072
+}
+#div6
+{
+    background-color: #F6F7F9;
+    grid-area: div6;
+    padding:0px 50px; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+#div6 img{
+    height:80%;
+    object-fit: cover;
+    border-radius:20px;
+}
+#div6 button{
+    padding:10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0162FF;
+    color:white;
+}
+#div7
+{
+    grid-area: div7;
+}
+#div7-top
+{
+    padding:0px 70px;
+    display:flex;
+    align-items: center;
+    gap:50px;
+    text-align: left;
+}
+#div7-top-left
+{
+    background-color:white;
+    height:300px;
+    width:800px;
+    padding:30px;
+}
+#div7-top-left button{
+    padding:10px 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+#div7-top-left h1{
+    font-weight: 500;
+    line-height: 30px;
+}
+#div7-top-right{
+    height:300px;
+    width:700px;
+    padding-top:100px;
+}
+#div8
+{
+    background-color: rgb(87, 110, 34);
+    grid-area: div8;
+}
+#div9
+{
+    background-color: rgb(117, 111, 151);
+    grid-area: div9;
+}
+#div10
+{
+    background-color: rgb(1, 31, 32);
+    grid-area: div10;
+}
+#div11
+{
+    background-color: rgb(250, 0, 0);
+    grid-area: div11;
+}
+#div12
+{
+    background-color: rgb(109, 107, 105);
+    grid-area: div12;
+}
+#div13
+{
+    background-color: rgb(39, 1, 36);
+    grid-area: div13;
+}
+#div14
+{
+    background-color: rgb(124, 73, 7);
+    grid-area: div14;
+}
+#div15
+{
+    background-color: rgb(1, 66, 26);
+    grid-area: div15;
+}
+#div16
+{
+    background-color: rgb(207, 64, 160);
+    grid-area: div16;
+}
+#div17
+{
+    background-color: rgb(68, 3, 30);
+    grid-area: div17;
+}
+#div18
+{
+    background-color: rgb(56, 41, 21);
+    grid-area: div18;
+}
+#div19
+{
+    background-color: rgb(60, 156, 15);
+    grid-area: div19;
+}
+#div20
+{
+    background-color: rgb(21, 6, 75);
+    grid-area: div20;
+}
+#div21
+{
+    background-color: rgb(255, 152, 18);
+    grid-area: div21;
+}
+#div22
+{
+    background-color: rgb(0, 204, 136);
+    grid-area: div22;
+}
+#div23
+{
+    background-color: rgb(2, 58, 50);
+    grid-area: div23;
+}
+#div24
+{
+    background-color: rgb(3, 250, 16);
+    grid-area: div24;
+}
+#div25
+{
+    background-color: rgb(207, 9, 101);
+    grid-area: div25;
+}
+#div26
+{
+    background-color: rgb(170, 241, 174);
+    grid-area: div26;
+}

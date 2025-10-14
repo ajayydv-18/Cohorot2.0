@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section {
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section h1 {
+  color: red;
+}
+main .red {
+  padding: 10px 30px;
+  background-color: red;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  margin: 20px;
+  border-radius: 20px;
+}
+main .blue {
+  padding: 10px 30px;
+  background-color: blue;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  margin: 20px;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
