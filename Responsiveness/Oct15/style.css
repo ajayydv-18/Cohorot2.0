@@ -1,0 +1,102 @@
+@font-face {
+  font-family: chillax;
+  src: url(Chillax-Regular.woff);
+}
+@font-face {
+  font-family: gilroy;
+  src: url(../../Assignments/Gilroy-Medium.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  overflow: auto;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.4rem;
+}
+main section .sec1-left-img {
+  width: 100%;
+}
+main section .sec1-left-img img {
+  width: 100%;
+  border-radius: 1.3rem;
+}
+main section .sec1-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: #1E1E1E;
+  border-radius: 1.2rem;
+  gap: 10rem;
+}
+main section .sec1-right .sec-right1 {
+  text-transform: uppercase;
+  font-family: gilroy;
+  color: #BCBAB7;
+  font-size: 1.3rem;
+}
+main section .sec1-right .sec-right2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+main section .sec1-right .sec-right2 h1 {
+  text-transform: uppercase;
+  font-family: chillax;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+main section .sec1-right .sec-right2 p {
+  width: 90%;
+  font-size: 1.5rem;
+  color: #7E7D7B;
+  font-weight: 600;
+  font-family: gilroy;
+  line-height: 2rem;
+}
+main section .sec1-right .sec-right3 {
+  margin-top: 2rem;
+  font-family: gilroy;
+  color: #7E7D7B;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main section .sec1-right .sec-right3 i {
+  font-size: 1.7rem;
+  padding: 1rem;
+  font-weight: 100;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+@media (min-width: 700px) {
+  main section {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
