@@ -22,21 +22,23 @@ main{
 }
 .box
 {
-    height: 250px;
+    height: 300px;
     width: 500px;
     padding: 50px;
     background: linear-gradient(white,#D9B18D);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap:20px;
     border-radius: 20px;
+    padding: 20px;
 
 }
 .text
 {
     width: 100%;
-    height: 50%;
+    height: 35%;
     background: linear-gradient(#A57C55,#79533191);
     border-radius: 20px;
     display: flex;
@@ -62,4 +64,9 @@ button{
 }
 button:active{
     scale: 0.9;
+}
+.box h1
+{
+    font-family: gilroy;
+    
 }
