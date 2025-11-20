@@ -1,0 +1,99 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../../Nov17/project1/Gilroy-Medium.ttf);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.card
+{
+    height: 380px;
+    width: 280px;
+    background-color: #31363d;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.div2
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.div3
+{
+    width: 100%;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #4A5DF9;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    scale: 0.9;
+}
+#tick
+{
+    height: 20px;
+    width: 20px;
+}
+.name
+{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+i{
+    position: absolute;
+    top: 3%;
+    left: 90%;
+}
+i:hover{
+    cursor: pointer;
+    scale: 1.08;
+}
