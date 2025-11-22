@@ -1,0 +1,198 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Nov17/project1/Gilroy-Medium.ttf);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    position: relative;
+
+}
+aside{
+    width: 4.7rem;
+    height: 100vh;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    border-right: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.asideTop
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.asideBottom
+{
+    padding: 1.5rem;
+}
+aside i{
+    padding: 0.5rem;
+    font-size: 29px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+aside i:hover{
+    background-color: #F6F6F3;
+}
+.left
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+    padding-left: 5.7rem;
+}
+.nav{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+
+}
+.nav input{
+    width: 95%;
+    height:90%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #F1F1F1;
+    padding: 1.6rem;
+    color: grey;
+}
+.nav img{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.nav input:hover{
+    background-color: #E1E1E1;
+}
+#search
+{
+    position: absolute;
+    padding: 0.8rem;
+    color: grey;
+    font-size: 1.2rem; 
+}
+section img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+section{
+    columns: 17rem;
+    column-gap: 0.9rem;
+    overflow: hidden;
+}
+.imageCard
+{
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 0.8rem;
+
+
+}
+.imageCard img{
+    object-fit: cover;
+    border-radius: 0.8rem;
+
+}
+
+.overlay
+{
+    padding: 1.2rem;
+    height: 97.8%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(80, 80, 80, 0.15) 40%, transparent 70%);
+    border-radius: 0.8rem;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.top button{
+    padding: 0.7rem 1.4rem;
+    background-color: #CC001F;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.top button:active
+{
+    scale: 0.95;
+}
+.overlay .top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.overlay .bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.bottomRight
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+.bottomLeft h3
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.overlay i{
+    background-color: white;
+    color: black;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+.imageCard:hover .overlay{
+    opacity: 1;
+}
+
