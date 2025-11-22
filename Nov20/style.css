@@ -62,6 +62,8 @@ aside i:hover{
     height: 100%;
     padding: 0.6rem;
     padding-left: 5.7rem;
+    position: relative;
+    overflow-x: hidden;
 }
 .nav{
     width: 100%;
@@ -78,11 +80,11 @@ aside i:hover{
     height:90%;
     border: none;
     border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 700;
     background-color: #F1F1F1;
     padding: 1.6rem;
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 .nav img{
     height: 3rem;
@@ -93,6 +95,30 @@ aside i:hover{
 }
 .nav input:hover{
     background-color: #E1E1E1;
+}
+.recommendation
+{
+    width:100%;
+    background-color: white;
+    position: absolute;
+    top:9.9%;
+    left:5.6%;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    display: none;
+}
+.items
+{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    gap:  rem;
+}
+.items h3{
+    margin: 5px;
 }
 #search
 {
@@ -110,6 +136,18 @@ section{
     columns: 17rem;
     column-gap: 0.9rem;
     overflow: hidden;
+}
+.searchBlur
+{
+    height: 100vh;
+    width: 100%;
+    top:9.9%;
+    background-color: #333333c7;
+    position: absolute;
+    z-index: 2;
+    left: 4.7rem;
+    display: none;
+
 }
 .imageCard
 {

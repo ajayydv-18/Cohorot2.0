@@ -34,6 +34,7 @@ let sound = [
  new Audio("./Sound/Fs4.mp3"),
  new Audio("./Sound/Fs5.mp3"),
  new Audio("./Sound/Fs4.mp3"),
+ new Audio("./Sound/Fs5.mp3"),
  new Audio("./Sound/Fs5.mp3")
 ];
 console.log(sound.length);
