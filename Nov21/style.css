@@ -1,35 +1,56 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./musicals.ttf);
+}
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
 main{
-    height: 100%;
-    width: 100%;
-    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(132, 132, 182),pink);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+main h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: gilroy;
+    background: url(https://plus.unsplash.com/premium_photo-1677545820818-f1639f3e5b65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bXVzaWN8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 1px #333;
 }
 .box
 {
-    height: 22rem;
+    height: 65%;
     width:100%;
-    background-color: antiquewhite;
+    background: black;
     padding: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
+    border-radius:0.8rem;
+    position: relative;
 }
 button{
     height: 100%;
-    width: 2rem;
+    width: 2.2%;
     border: none;
     border-radius: 0.8rem;
     background-color: #ffff;
