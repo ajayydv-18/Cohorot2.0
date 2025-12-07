@@ -98,7 +98,7 @@ btn.addEventListener('click', ()=>
     {
         h2.innerHTML = arr[num];
     }
-    if(num == arr.length)
+    if(num == arr.length-1)
     {
         btn.style.backgroundColor = "#444";
         btn.style.pointerEvents = "none";
