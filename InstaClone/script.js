@@ -83,74 +83,170 @@ const storyArray = [
 const users = [
   {
     userName: "Zayden Cole",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://images.unsplash.com/photo-1552954277-0c45bd503b54?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1552954277-0c45bd503b54?w=500&auto=format&fit=crop&q=60",
+    likes: 124,
+    comments: 18,
+    isFollowed: false,
+    postDescription: "New day, new energy ✨🔥"
   },
   {
     userName: "Luna Carter",
-    profilePic: "",
-    post: "",
-    isFollowed: true
+    profilePic: "https://images.unsplash.com/photo-1711894904251-78b075a124f4?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1711894904251-78b075a124f4?w=500&auto=format&fit=crop&q=60",
+    likes: 532,
+    comments: 44,
+    isFollowed: true,
+    postDescription: "Soft vibes & sunshine moments 🌸🌞💫"
   },
   {
     userName: "Mason Rivera",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://images.unsplash.com/photo-1575439462433-8e1969065df7?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1575439462433-8e1969065df7?w=500&auto=format&fit=crop&q=60",
+    likes: 278,
+    comments: 12,
+    isFollowed: false,
+    postDescription: "Finding peace in little things 🌿✨"
   },
   {
     userName: "Elena Brooks",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://plus.unsplash.com/premium_photo-1681234557177-cdaa392ede04?w=500&auto=format&fit=crop&q=60",
+    post: "https://plus.unsplash.com/premium_photo-1681234557177-cdaa392ede04?w=500&auto=format&fit=crop&q=60",
+    likes: 804,
+    comments: 67,
+    isFollowed: false,
+    postDescription: "Coffee and confidence ☕💁‍♀️✨"
   },
   {
     userName: "Leo Mitchell",
-    profilePic: "",
-    post: "",
-    isFollowed: true
+    profilePic: "https://plus.unsplash.com/premium_photo-1683121850784-a6bdf87c6150?w=500&auto=format&fit=crop&q=60",
+    post: "https://plus.unsplash.com/premium_photo-1683121850784-a6bdf87c6150?w=500&auto=format&fit=crop&q=60",
+    likes: 351,
+    comments: 22,
+    isFollowed: true,
+    postDescription: "Adventure begins where comfort ends 🌍🔥"
   },
   {
     userName: "Ariana Flores",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://images.unsplash.com/photo-1620523162656-4f968dca355a?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1620523162656-4f968dca355a?w=500&auto=format&fit=crop&q=60",
+    likes: 690,
+    comments: 39,
+    isFollowed: false,
+    postDescription: "Brighter days ahead 😊🌈✨"
   },
   {
     userName: "Xavier Hunt",
-    profilePic: "",
-    post: "",
-    isFollowed: true
+    profilePic: "https://images.unsplash.com/photo-1711894904366-4f6f7e8affea?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1711894904366-4f6f7e8affea?w=500&auto=format&fit=crop&q=60",
+    likes: 412,
+    comments: 15,
+    isFollowed: true,
+    postDescription: "Focused. Driven. unstoppable 💪🚀"
   },
   {
     userName: "Nova Bennett",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://images.unsplash.com/photo-1564038079594-99ba184fd036?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1564038079594-99ba184fd036?w=500&auto=format&fit=crop&q=60",
+    likes: 233,
+    comments: 9,
+    isFollowed: false,
+    postDescription: "Moonlit thoughts and peaceful nights 🌙💫"
   },
   {
     userName: "Finn Parker",
-    profilePic: "",
-    post: "",
-    isFollowed: false
+    profilePic: "https://images.unsplash.com/photo-1541257710737-06d667133a53?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1541257710737-06d667133a53?w=500&auto=format&fit=crop&q=60",
+    likes: 987,
+    comments: 81,
+    isFollowed: false,
+    postDescription: "Making memories worth keeping 📸❤️"
   },
   {
     userName: "Scarlett Hayes",
-    profilePic: "",
-    post: "",
-    isFollowed: true
+    profilePic: "https://images.unsplash.com/photo-1628196237219-9d0ab2abeee1?w=500&auto=format&fit=crop&q=60",
+    post: "https://images.unsplash.com/photo-1628196237219-9d0ab2abeee1?w=500&auto=format&fit=crop&q=60",
+    likes: 729,
+    comments: 56,
+    isFollowed: true,
+    postDescription: "Dancing through the chaos 🎶💃🔥"
   }
 ];
 
-function post()
-{
+
+
+let card = document.querySelector('.card');
+function post() {
   let clutter = "";
-  users.forEach(() =>
-  {
-    clutter += 'aaj' ;
-  }
-  )
+  users.forEach((elem , idx) => {
+    clutter += `<div class="cardTop">
+            <div class="topLeft">
+              <div class="cardTopImg">
+                <img
+                  src="${elem.profilePic}"
+                  alt=""
+                />
+              </div>
+              <h5 class="userName">${elem.userName} .</h5>
+              <h5 class="time">10h</h5>
+            </div>
+            <div class="topRight">
+              <h5>${elem.isFollowed === true? "Follow":""}</h5>
+              <i class="ri-more-fill"></i>
+            </div>
+          </div>
+          <div class="cardMid">
+            <img src="${elem.post}" alt="">
+          </div>
+          <div class="cardBottom">
+            <div class="cardBottomTop">
+              <div class="bottomLeft">
+                <div class="like"><i class="ri-heart-fill"></i></div>
+                <div class="comment"><i class="ri-chat-3-line"></i></div>
+                <div class="share"><i class="ri-share-forward-line"></i></div>
+              </div>
+              <div class="bottomRight">
+                <div class="save">
+                  <i class="ri-heart-add-line"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cradBottomMid">
+              <h3 class="likes">${elem.likes} likes</h3>
+            </div>
+            <div class="cardBottomBottom">
+              <p>${elem.userName}<span>.....</span> ${elem.postDescription} </p>
+              <p class="para">View  All  ${elem.comments}  Comments</p>
+              <p class="para"> Add  Comments ....</p>
+            </div>
+          </div>`;
+  });
+  card.innerHTML = clutter;
+
+  let userPost = document.querySelectorAll('.cardMid')
+  let like = document.querySelectorAll('.like');
+  console.log(like);
+  let count = 0;
+  
+  userPost.forEach((elem , idx)=>
+  {    
+    elem.addEventListener('dblclick' , ()=>{      
+    if(count === 1)
+    {
+      count = 0;
+      like[idx].style.background= "white";
+      like[idx].style.backgroundClip = "text";
+      like[idx].style.color = "transparent";
+    }
+    else
+    {     
+      like[idx].style.background= "red";
+      like[idx].style.backgroundClip = "text";
+      like[idx].style.color = "transparent";
+      count++;
+    }
+    })
+  })
 }
 
 function story() {
@@ -197,6 +293,7 @@ function story() {
       clearInterval(interval);
       interval = setInterval(() => {
         document.querySelector(".innerDiv").style.width = `${moving++}%`;
+        if(moving > 100) clearInterval(interval);
       }, n);
       //overlay ko defualt timer dene ke liye
 

@@ -1,4 +1,8 @@
 @font-face {
+  font-family: instagram;
+  src: url(./Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+}
+@font-face {
   font-family: gilroy;
   src: url(../Nov17/project1/Gilroy-Medium.ttf);
 }
@@ -6,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: gilroy;
 }
 html,
 body {
@@ -23,7 +26,7 @@ main {
   overflow: auto;
 }
 .mid {
-  position: relative;
+  font-family: gilroy;
 }
 .stories {
   padding: 1.3rem;
@@ -63,21 +66,23 @@ main {
 .overlay {
   position: absolute;
   inset: 0;
+  margin-left: 15rem;
+  margin-right: 30rem;
   z-index: 10;
   height: 100%;
-  width: 100%;
   display: none;
-  background-color: rgba(5, 5, 5, 0.445);
+  background-color: rgba(0, 0, 0, 0.603);
 }
 .overlay img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  height: 80%;
-  width: 60%;
-  transform: translate(-50%, -50%);
+
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  height: 30rem;
+  width: 21rem;
   border-radius: 10px;
   object-fit: cover;
+  z-index: 10;
 }
 .outerDiv {
   width: 100%;
@@ -93,7 +98,7 @@ main {
 }
 .card
 {
-    margin: 2rem 3rem;
+    margin: 0rem 2rem;
     /* background-color: #ffc700; */
     padding: 0.5rem;
 }
@@ -103,6 +108,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding-left: 0.5rem;
+    margin-top: 1rem;
 }
 .cardTopImg
 {
@@ -173,6 +179,7 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+
 .bottomLeft
 {
   display: flex;
@@ -213,4 +220,40 @@ main {
   color: grey;
   word-spacing: 0.13rem;
 }
-
+.left-sidebar
+{
+  color: white;
+  border-right: 0.5px solid grey;
+}
+.left-sidebar{
+  font-family: gilroy;
+  height: 100vh;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.sideBarTop{
+  font-size: 2rem;
+  font-family: instagram;
+  font-weight: 100;
+}
+.sideBarMid{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  word-spacing: 0.7rem;
+}
+.sideBarBottom
+{
+  font-size: 1.2rem;
+}
+.left-sidebar i{
+  font-size: 1.4rem;
+}
