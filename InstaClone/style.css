@@ -22,17 +22,22 @@ main {
   width: 100%;
   background-color: #0c1014;
   display: grid;
-  grid-template-columns: 15rem 40rem 25rem;
-  overflow: auto;
+  grid-template-columns: 15rem 50vw 25rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 .mid {
   font-family: gilroy;
+  margin-left: 4rem;
+  /* background-color: #ffc700; */
 }
 .stories {
   padding: 1.3rem;
   display: flex;
   gap: 2rem;
   overflow: auto;
+  /* background-color: #d300c5; */
 }
 .stories::-webkit-scrollbar {
   display: none;
@@ -66,8 +71,8 @@ main {
 .overlay {
   position: absolute;
   inset: 0;
-  margin-left: 15rem;
-  margin-right: 30rem;
+  margin-left: 19rem;
+  margin-right: 27.5rem;
   z-index: 10;
   height: 100%;
   display: none;
@@ -98,17 +103,20 @@ main {
 }
 .card
 {
-    margin: 0rem 2rem;
-    /* background-color: #ffc700; */
-    padding: 0.5rem;
+    /* background-color: #d6af11; */
+    padding: 0.3rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .cardTop
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
     margin-top: 1rem;
+    /* background-color: aqua; */
 }
 .cardTopImg
 {
@@ -121,8 +129,9 @@ main {
 .topLeft{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
+    /* background-color: rgb(40, 53, 53); */
 }
 .userName{
     font-size: 0.8rem;
@@ -160,6 +169,7 @@ main {
 .cardMid
 {
     padding-top: 1rem;
+    /* padding-left: 1rem; */
     width: 100%;
     /* background-color: #9DB6F7; */
 }
@@ -171,7 +181,10 @@ main {
 }
 .cardBottom
 {
+  width: 100%;
   padding: 0.5rem;
+  /* margin-left: 1.5rem; */
+  /* background-color: brown; */
 }
 .cardBottomTop
 {
@@ -246,7 +259,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 100;
   word-spacing: 0.7rem;
 }
@@ -256,4 +269,129 @@ main {
 }
 .left-sidebar i{
   font-size: 1.4rem;
+}
+.right-sidebar{
+  margin-left: 4rem;
+}
+.rightTop
+{
+  font-family: gilroy;
+  display: flex;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.top1{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.top1 img
+{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+
+}
+.top2 .user{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.top2 .userName{
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: grey;
+}
+.top3
+{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #A3BCFF;
+}
+.rightMid1
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.rightMid h1{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: gilroy;
+}
+.rightMid h3{
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: gilroy;
+  color:#A3BCFF
+}
+
+.rightMid
+{
+  font-family: gilroy;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+.rightMid2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rightMid2.top1{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.rightMid2.top1 img
+{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+
+}
+.rightMid2.top2 .user{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.rightMid2.top2 .userName{
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: grey;
+}
+.rightMid2.top3
+{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #A3BCFF;
+}
+.rightBottom
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 1rem;
+  color: grey;
+  font-family: gilroy;
+}
+.rightBottom1{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.rightBottom2{
+  text-transform: capitalize;
+  font-size: 1rem;
 }
